@@ -60,6 +60,16 @@ dependencies {
     // ViewModel utilities for Compose
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+
+    // Ktor api client
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio)
+    // implementation("io.ktor:ktor-client-okhttp:2.3.4") // Use OkHttp engine for Android
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.kotlinx.serialization.json)
+
+
     // Koin dependency injection framework
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
